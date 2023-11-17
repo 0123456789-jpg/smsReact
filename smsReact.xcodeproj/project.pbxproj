@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63071FAA2B07870500BDB6FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FA92B07870500BDB6FC /* AppDelegate.m */; };
+		63071FAC2B07870500BDB6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63071FAB2B07870500BDB6FC /* Assets.xcassets */; };
+		63071FAF2B07870500BDB6FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63071FAD2B07870500BDB6FC /* MainMenu.xib */; };
+		63071FB22B07870500BDB6FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FB12B07870500BDB6FC /* main.m */; };
+		63071FBD2B07870500BDB6FC /* smsReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FBC2B07870500BDB6FC /* smsReactTests.m */; };
+		63071FC82B07870500BDB6FC /* smsReactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FC72B07870500BDB6FC /* smsReactUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63071FB92B07870500BDB6FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63071F9D2B07870500BDB6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63071FA42B07870500BDB6FC;
+			remoteInfo = smsReact;
+		};
+		63071FC42B07870500BDB6FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63071F9D2B07870500BDB6FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63071FA42B07870500BDB6FC;
+			remoteInfo = smsReact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63071FA52B07870500BDB6FC /* smsReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63071FA82B07870500BDB6FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63071FA92B07870500BDB6FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63071FAB2B07870500BDB6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63071FAE2B07870500BDB6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		63071FB02B07870500BDB6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63071FB12B07870500BDB6FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63071FB32B07870500BDB6FC /* smsReact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smsReact.entitlements; sourceTree = "<group>"; };
+		63071FB82B07870500BDB6FC /* smsReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smsReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63071FBC2B07870500BDB6FC /* smsReactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smsReactTests.m; sourceTree = "<group>"; };
+		63071FBE2B07870500BDB6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63071FC32B07870500BDB6FC /* smsReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smsReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63071FC72B07870500BDB6FC /* smsReactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smsReactUITests.m; sourceTree = "<group>"; };
+		63071FC92B07870500BDB6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63071FA22B07870500BDB6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FB52B07870500BDB6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FC02B07870500BDB6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63071F9C2B07870500BDB6FC = {
+			isa = PBXGroup;
+			children = (
+				63071FA72B07870500BDB6FC /* smsReact */,
+				63071FBB2B07870500BDB6FC /* smsReactTests */,
+				63071FC62B07870500BDB6FC /* smsReactUITests */,
+				63071FA62B07870500BDB6FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63071FA62B07870500BDB6FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63071FA52B07870500BDB6FC /* smsReact.app */,
+				63071FB82B07870500BDB6FC /* smsReactTests.xctest */,
+				63071FC32B07870500BDB6FC /* smsReactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63071FA72B07870500BDB6FC /* smsReact */ = {
+			isa = PBXGroup;
+			children = (
+				63071FA82B07870500BDB6FC /* AppDelegate.h */,
+				63071FA92B07870500BDB6FC /* AppDelegate.m */,
+				63071FAB2B07870500BDB6FC /* Assets.xcassets */,
+				63071FAD2B07870500BDB6FC /* MainMenu.xib */,
+				63071FB02B07870500BDB6FC /* Info.plist */,
+				63071FB12B07870500BDB6FC /* main.m */,
+				63071FB32B07870500BDB6FC /* smsReact.entitlements */,
+			);
+			path = smsReact;
+			sourceTree = "<group>";
+		};
+		63071FBB2B07870500BDB6FC /* smsReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				63071FBC2B07870500BDB6FC /* smsReactTests.m */,
+				63071FBE2B07870500BDB6FC /* Info.plist */,
+			);
+			path = smsReactTests;
+			sourceTree = "<group>";
+		};
+		63071FC62B07870500BDB6FC /* smsReactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63071FC72B07870500BDB6FC /* smsReactUITests.m */,
+				63071FC92B07870500BDB6FC /* Info.plist */,
+			);
+			path = smsReactUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63071FA42B07870500BDB6FC /* smsReact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63071FCC2B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReact" */;
+			buildPhases = (
+				63071FA12B07870500BDB6FC /* Sources */,
+				63071FA22B07870500BDB6FC /* Frameworks */,
+				63071FA32B07870500BDB6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smsReact;
+			productName = smsReact;
+			productReference = 63071FA52B07870500BDB6FC /* smsReact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63071FB72B07870500BDB6FC /* smsReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63071FCF2B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReactTests" */;
+			buildPhases = (
+				63071FB42B07870500BDB6FC /* Sources */,
+				63071FB52B07870500BDB6FC /* Frameworks */,
+				63071FB62B07870500BDB6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63071FBA2B07870500BDB6FC /* PBXTargetDependency */,
+			);
+			name = smsReactTests;
+			productName = smsReactTests;
+			productReference = 63071FB82B07870500BDB6FC /* smsReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63071FC22B07870500BDB6FC /* smsReactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63071FD22B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReactUITests" */;
+			buildPhases = (
+				63071FBF2B07870500BDB6FC /* Sources */,
+				63071FC02B07870500BDB6FC /* Frameworks */,
+				63071FC12B07870500BDB6FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63071FC52B07870500BDB6FC /* PBXTargetDependency */,
+			);
+			name = smsReactUITests;
+			productName = smsReactUITests;
+			productReference = 63071FC32B07870500BDB6FC /* smsReactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63071F9D2B07870500BDB6FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					63071FA42B07870500BDB6FC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					63071FB72B07870500BDB6FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 63071FA42B07870500BDB6FC;
+					};
+					63071FC22B07870500BDB6FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 63071FA42B07870500BDB6FC;
+					};
+				};
+			};
+			buildConfigurationList = 63071FA02B07870500BDB6FC /* Build configuration list for PBXProject "smsReact" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63071F9C2B07870500BDB6FC;
+			productRefGroup = 63071FA62B07870500BDB6FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63071FA42B07870500BDB6FC /* smsReact */,
+				63071FB72B07870500BDB6FC /* smsReactTests */,
+				63071FC22B07870500BDB6FC /* smsReactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63071FA32B07870500BDB6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63071FAC2B07870500BDB6FC /* Assets.xcassets in Resources */,
+				63071FAF2B07870500BDB6FC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FB62B07870500BDB6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FC12B07870500BDB6FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63071FA12B07870500BDB6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63071FB22B07870500BDB6FC /* main.m in Sources */,
+				63071FAA2B07870500BDB6FC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FB42B07870500BDB6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63071FBD2B07870500BDB6FC /* smsReactTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63071FBF2B07870500BDB6FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63071FC82B07870500BDB6FC /* smsReactUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63071FBA2B07870500BDB6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63071FA42B07870500BDB6FC /* smsReact */;
+			targetProxy = 63071FB92B07870500BDB6FC /* PBXContainerItemProxy */;
+		};
+		63071FC52B07870500BDB6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63071FA42B07870500BDB6FC /* smsReact */;
+			targetProxy = 63071FC42B07870500BDB6FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63071FAD2B07870500BDB6FC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63071FAE2B07870500BDB6FC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63071FCA2B07870500BDB6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63071FCB2B07870500BDB6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63071FCD2B07870500BDB6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = smsReact/smsReact.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = smsReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63071FCE2B07870500BDB6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = smsReact/smsReact.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = smsReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63071FD02B07870500BDB6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				INFOPLIST_FILE = smsReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smsReact.app/Contents/MacOS/smsReact";
+			};
+			name = Debug;
+		};
+		63071FD12B07870500BDB6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				INFOPLIST_FILE = smsReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smsReact.app/Contents/MacOS/smsReact";
+			};
+			name = Release;
+		};
+		63071FD32B07870500BDB6FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				INFOPLIST_FILE = smsReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smsReact;
+			};
+			name = Debug;
+		};
+		63071FD42B07870500BDB6FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4Y4T5YP7F2;
+				INFOPLIST_FILE = smsReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.c191239.smsReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smsReact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63071FA02B07870500BDB6FC /* Build configuration list for PBXProject "smsReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63071FCA2B07870500BDB6FC /* Debug */,
+				63071FCB2B07870500BDB6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63071FCC2B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63071FCD2B07870500BDB6FC /* Debug */,
+				63071FCE2B07870500BDB6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63071FCF2B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63071FD02B07870500BDB6FC /* Debug */,
+				63071FD12B07870500BDB6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63071FD22B07870500BDB6FC /* Build configuration list for PBXNativeTarget "smsReactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63071FD32B07870500BDB6FC /* Debug */,
+				63071FD42B07870500BDB6FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63071F9D2B07870500BDB6FC /* Project object */;
+}
