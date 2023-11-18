@@ -1,10 +1,10 @@
-#  smsReact
+# smsReact
 
 I'm tired of React, so I *react*.
 Why website if you can work __natively__?
 
 Written in pure `Objective-C`.
-Using [sms3-rs](https://github.com/subitlab/sms3-rs.git) as backend.
+Using [sms3](https://github.com/subitlab/sms3-backend) as backend.
 
 Licensed under `Affero General Public License version 3`.
 
