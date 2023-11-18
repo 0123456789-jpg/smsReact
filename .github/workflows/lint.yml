@@ -10,6 +10,8 @@ jobs:
   lint:
     name: Lint using clang-format
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: {{ secrets.TOKEN }}
 
     steps:
       - name: Checkout
