@@ -9,7 +9,7 @@ on:
 jobs:
   lint:
     name: Lint using clang-format
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
