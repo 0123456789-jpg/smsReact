@@ -11,3 +11,4 @@ Licensed under `Affero General Public License version 3`.
 __Note:__ This project is __*NOT*__ related to / affiliated to SubIT organization.
 
 Proudly presented by C191239.
+That's also me if you see `David 🤴` in the "Created by" comment section.
