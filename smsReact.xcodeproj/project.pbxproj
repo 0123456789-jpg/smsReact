@@ -13,6 +13,7 @@
 		63071FB22B07870500BDB6FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FB12B07870500BDB6FC /* main.m */; };
 		63071FBD2B07870500BDB6FC /* smsReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FBC2B07870500BDB6FC /* smsReactTests.m */; };
 		63071FC82B07870500BDB6FC /* smsReactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FC72B07870500BDB6FC /* smsReactUITests.m */; };
+		63DDDF1A2B0868D0001F7E5F /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDDF192B0868D0001F7E5F /* Network.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		63071FC32B07870500BDB6FC /* smsReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smsReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63071FC72B07870500BDB6FC /* smsReactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smsReactUITests.m; sourceTree = "<group>"; };
 		63071FC92B07870500BDB6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63071FD82B078D5000BDB6FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		63DDDF182B0868D0001F7E5F /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		63DDDF192B0868D0001F7E5F /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		63071F9C2B07870500BDB6FC = {
 			isa = PBXGroup;
 			children = (
+				63071FD82B078D5000BDB6FC /* README.md */,
 				63071FA72B07870500BDB6FC /* smsReact */,
 				63071FBB2B07870500BDB6FC /* smsReactTests */,
 				63071FC62B07870500BDB6FC /* smsReactUITests */,
@@ -104,6 +109,8 @@
 				63071FB02B07870500BDB6FC /* Info.plist */,
 				63071FB12B07870500BDB6FC /* main.m */,
 				63071FB32B07870500BDB6FC /* smsReact.entitlements */,
+				63DDDF182B0868D0001F7E5F /* Network.h */,
+				63DDDF192B0868D0001F7E5F /* Network.m */,
 			);
 			path = smsReact;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63071FB22B07870500BDB6FC /* main.m in Sources */,
+				63DDDF1A2B0868D0001F7E5F /* Network.m in Sources */,
 				63071FAA2B07870500BDB6FC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

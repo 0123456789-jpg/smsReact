@@ -6,9 +6,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Network.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (strong) Network *net;
 
 @end
 
