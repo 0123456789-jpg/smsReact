@@ -24,16 +24,12 @@
     _session=[NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
     return self;
 }
-- (BOOL)loginWithEmail:(NSString *)email Password:(NSString *)password{
+- (void)loginWithEmail:(NSString *)email Password:(NSString *)password{
     NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/api/account/login",_baseAddr]]];
-    NSDictionary *dict=[NSDictionary dictionaryWithObjectsAndKeys:email, @"email", password, @"passwprd", nil];
+    NSDictionary *dict=[NSDictionary dictionaryWithObjectsAndKeys:email, @"email", password, @"password", nil];
     NSData *data=[NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingSortedKeys error:nil];
-    [_session uploadTaskWithRequest:request fromData:data completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (!error) {
-            <#statements#>
-        } else {
-            NSLog(@"%@",error);
-        }
-    }];
+    NSURLSessionUploadTask *task=[_session uploadTaskWithRequest:request fromData:data];
+    task.taskDescription=@"login";
+    [task resume];
 }
 @end
