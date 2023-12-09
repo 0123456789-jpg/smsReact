@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Network : NSObject<NSURLSessionTaskDelegate>
+@interface Network : NSObject <NSURLSessionTaskDelegate>
 - (instancetype)initWithAddr:(NSString *)addr Port:(NSUInteger)port;
 - (void)loginWithEmail:(NSString *)email Password:(NSString *)password;
 @end
