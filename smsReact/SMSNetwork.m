@@ -5,7 +5,7 @@
 //  Created by David 🤴 on 2023/11/18.
 //
 
-#import "Network.h"
+#import "SMSNetwork.h"
 #include <Foundation/Foundation.h>
 
 @interface SMSNetwork ()
@@ -64,7 +64,6 @@ typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
                 _userId =
                     [(NSNumber *)(body[@"account_id"]) unsignedIntegerValue];
                 _userToken = (NSString *)(body[@"token"]);
-                NSValue *i;
               } else {
                 // [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
               }
