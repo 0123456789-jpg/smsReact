@@ -8,7 +8,7 @@
 #import "Network.h"
 #include <Foundation/Foundation.h>
 
-@interface Network ()
+@interface SMSNetwork ()
 
 @property(strong) NSString *baseAddr;
 @property NSUInteger basePort;
@@ -16,13 +16,15 @@
 @property NSUInteger userId;
 @property(strong) NSURLSession *session;
 
-enum TaskType{
-  LOGIN=0,
+typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
+  // Default value of [aString intValue] when parsing error.
+  SMSNetworkTaskUnknown = 0,
+  SMSNetworkTaskLogin = 1,
 };
 
 @end
 
-@implementation Network
+@implementation SMSNetwork
 
 - (instancetype)initWithAddr:(NSString *)addr Port:(NSUInteger)port {
   self = [super init];
@@ -39,23 +41,40 @@ enum TaskType{
       requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:
                                                         @"%@/api/account/login",
                                                         _baseAddr]]];
+  request.HTTPMethod = @"POST";
+  [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
   NSDictionary *dict = [NSDictionary
       dictionaryWithObjectsAndKeys:email, @"email", password, @"password", nil];
   NSData *data = [NSJSONSerialization dataWithJSONObject:dict
                                                  options:nil
                                                    error:nil];
-  NSURLSessionUploadTask *task = [_session uploadTaskWithRequest:request
-                                                        fromData:data];
-  task.taskDescription = @"login";
+  NSURLSessionUploadTask *task = [_session
+      uploadTaskWithRequest:request
+                   fromData:data
+          completionHandler:^(NSData *_Nullable data,
+                              NSURLResponse *_Nullable response,
+                              NSError *_Nullable error) {
+            if (!error) {
+              NSInteger statusCode = ((NSHTTPURLResponse *)response).statusCode;
+              if (statusCode >= 200 && statusCode <= 299) {
+                NSDictionary *body =
+                    [NSJSONSerialization JSONObjectWithData:data
+                                                    options:nil
+                                                      error:nil];
+                _userId =
+                    [(NSNumber *)(body[@"account_id"]) unsignedIntegerValue];
+                _userToken = (NSString *)(body[@"token"]);
+                NSValue *i;
+              } else {
+                // [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
+              }
+            } else {
+              // TODO: Handle client error
+            }
+          }];
+  task.taskDescription =
+      [NSString stringWithFormat:@"%lu", (NSUInteger)SMSNetworkTaskLogin];
   [task resume];
-}
-
-- (void)URLSession:(NSURLSession *)session
-                    task:(NSURLSessionTask *)task
-    didCompleteWithError:(NSError *)error {
-  if ([session isEqualTo:_session]) {
-    switch ([task.taskDescription intValue]) {}
-  }
 }
 
 @end

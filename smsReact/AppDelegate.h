@@ -10,6 +10,6 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property(strong) Network *net;
+@property(strong) SMSNetwork *net;
 
 @end
