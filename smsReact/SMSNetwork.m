@@ -1,12 +1,13 @@
 //
-//  Network.m
+//  SMSNetwork.m
 //  smsReact
 //
 //  Created by David 🤴 on 2023/11/18.
 //
 
 #import "SMSNetwork.h"
-#include <Foundation/Foundation.h>
+#import "SMSNetworkDelegate.h"
+#import <Foundation/Foundation.h>
 
 @interface SMSNetwork ()
 
@@ -15,6 +16,7 @@
 @property(strong) NSString *userToken;
 @property NSUInteger userId;
 @property(strong) NSURLSession *session;
+//@property(nonatomic, weak) id<SMSNetworkDelegate> delegate;
 
 typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
   // Default value of [aString intValue] when parsing error.
