@@ -16,7 +16,7 @@
 @property(strong) NSString *userToken;
 @property NSUInteger userId;
 @property(strong) NSURLSession *session;
-//@property(nonatomic, weak) id<SMSNetworkDelegate> delegate;
+@property(nonatomic, weak) id<SMSNetworkDelegate> delegate;
 
 typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
   // Default value of [aString intValue] when parsing error.

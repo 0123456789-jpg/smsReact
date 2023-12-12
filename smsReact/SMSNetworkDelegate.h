@@ -12,6 +12,7 @@
 
 @required
 - (void)network:(SMSNetwork *)network didLoginWithError:(NSError *)error;
+- (void)network:(SMSNetwork *)network didLogoutWithError:(NSError *)error;
 
 @optional
 
