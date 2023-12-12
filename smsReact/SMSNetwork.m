@@ -28,13 +28,16 @@ typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
 
 @implementation SMSNetwork
 
-- (instancetype)initWithAddr:(NSString *)addr Port:(NSUInteger)port {
+- (instancetype)initWithAddr:(NSString *)addr
+                        port:(NSUInteger)port
+                    delegate:(id<SMSNetworkDelegate>)delegate {
   self = [super init];
   _baseAddr = addr;
   _basePort = port;
   _session = [NSURLSession
       sessionWithConfiguration:[NSURLSessionConfiguration
                                    ephemeralSessionConfiguration]];
+  _delegate = delegate;
   return self;
 }
 
@@ -66,6 +69,8 @@ typedef NS_ENUM(NSUInteger, SMSNetworkTaskType) {
                 _userId =
                     [(NSNumber *)(body[@"account_id"]) unsignedIntegerValue];
                 _userToken = (NSString *)(body[@"token"]);
+                // Error unfinished
+                [_delegate network:self didLoginWithError:nil];
               } else {
                 // [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
               }
