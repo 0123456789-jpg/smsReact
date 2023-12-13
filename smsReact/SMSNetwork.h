@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
                         port:(NSUInteger)port
                     delegate:(id<SMSNetworkDelegate>)delegate;
 - (void)loginWithEmail:(NSString *)email Password:(NSString *)password;
+- (void)logout;
 
 @end
 

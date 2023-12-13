@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6306B4A72B292E0B003CFE03 /* SMSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306B4A62B292E0B003CFE03 /* SMSNetwork.m */; };
 		63071FAA2B07870500BDB6FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FA92B07870500BDB6FC /* AppDelegate.m */; };
 		63071FAC2B07870500BDB6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63071FAB2B07870500BDB6FC /* Assets.xcassets */; };
 		63071FAF2B07870500BDB6FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63071FAD2B07870500BDB6FC /* MainMenu.xib */; };
 		63071FB22B07870500BDB6FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FB12B07870500BDB6FC /* main.m */; };
 		63071FBD2B07870500BDB6FC /* smsReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FBC2B07870500BDB6FC /* smsReactTests.m */; };
 		63071FC82B07870500BDB6FC /* smsReactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63071FC72B07870500BDB6FC /* smsReactUITests.m */; };
-		63DDDF1A2B0868D0001F7E5F /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDDF192B0868D0001F7E5F /* Network.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6306B4A42B292E0B003CFE03 /* SMSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSNetwork.h; sourceTree = "<group>"; };
+		6306B4A52B292E0B003CFE03 /* SMSNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSNetworkDelegate.h; sourceTree = "<group>"; };
+		6306B4A62B292E0B003CFE03 /* SMSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSNetwork.m; sourceTree = "<group>"; };
 		63071FA52B07870500BDB6FC /* smsReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63071FA82B07870500BDB6FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63071FA92B07870500BDB6FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,8 +52,6 @@
 		63071FC72B07870500BDB6FC /* smsReactUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smsReactUITests.m; sourceTree = "<group>"; };
 		63071FC92B07870500BDB6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63071FD82B078D5000BDB6FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63DDDF182B0868D0001F7E5F /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
-		63DDDF192B0868D0001F7E5F /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,9 @@
 		63071FA72B07870500BDB6FC /* smsReact */ = {
 			isa = PBXGroup;
 			children = (
+				6306B4A42B292E0B003CFE03 /* SMSNetwork.h */,
+				6306B4A62B292E0B003CFE03 /* SMSNetwork.m */,
+				6306B4A52B292E0B003CFE03 /* SMSNetworkDelegate.h */,
 				63071FA82B07870500BDB6FC /* AppDelegate.h */,
 				63071FA92B07870500BDB6FC /* AppDelegate.m */,
 				63071FAB2B07870500BDB6FC /* Assets.xcassets */,
@@ -109,8 +113,6 @@
 				63071FB02B07870500BDB6FC /* Info.plist */,
 				63071FB12B07870500BDB6FC /* main.m */,
 				63071FB32B07870500BDB6FC /* smsReact.entitlements */,
-				63DDDF182B0868D0001F7E5F /* Network.h */,
-				63DDDF192B0868D0001F7E5F /* Network.m */,
 			);
 			path = smsReact;
 			sourceTree = "<group>";
@@ -261,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6306B4A72B292E0B003CFE03 /* SMSNetwork.m in Sources */,
 				63071FB22B07870500BDB6FC /* main.m in Sources */,
-				63DDDF1A2B0868D0001F7E5F /* Network.m in Sources */,
 				63071FAA2B07870500BDB6FC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@
 @protocol SMSNetworkDelegate
 
 @required
+// Login is successful if `error` is `nil`.
 - (void)network:(SMSNetwork *)network didLoginWithError:(NSError *)error;
 - (void)network:(SMSNetwork *)network didLogoutWithError:(NSError *)error;
 
